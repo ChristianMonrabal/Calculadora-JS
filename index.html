@@ -8,20 +8,22 @@
     <title>Calculadora JS</title>
     <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
     <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
-    <input type="number" placeholder="inserte un valor..." id="valor1">
-    <input type="number" placeholder="inserte un valor..." id="valor2">
-    <select name="" id="operacion">
+<body class="flex">
+    <div>
+        <input type="number" placeholder="inserte un valor..." id="valor1"><br>
+        <input type="number" placeholder="inserte un valor..." id="valor2"><br>
+        <select name="" id="operacion">
         <option value="sumar">sumar (+)</option>
         <option value="restar">restar (-)</option>
         <option value="multiplicar">multiplicar (*)</option>
         <option value="dividir">dividir (/)</option>
-    </select>
-    <input type="submit" value="Calcular" onclick="calcular()">
-    <p id="resultado"></p>
-
+    </select><br>
+        <input type="submit" value="Calcular" onclick="calcular()">
+        <p id="resultado"></p>
+    </div>
 </body>
 
 </html>
